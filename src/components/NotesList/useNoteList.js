@@ -1,9 +1,7 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 
 const useNotes = (notes, saveNotes) => {
   const [currentPage, setCurrentPage] = useState(1);
-  const navigate = useNavigate();
   const notesPerPage = 5;
 
   const offset = (currentPage - 1) * notesPerPage;
@@ -16,7 +14,15 @@ const useNotes = (notes, saveNotes) => {
   const handleDelete = (id) => {
     const updatedNotes = notes.filter((note) => note.id !== id);
     saveNotes(updatedNotes);
-    navigate("/");
+    const totalPages = Math.ceil(updatedNotes.length / notesPerPage);
+    // console.log(totalPages);
+    // console.log(currentNotes, currentPage);
+
+    // Edge case if 1 note left on the page and it's deleted
+    // Should move to previous page
+    if (currentPage > totalPages) {
+      setCurrentPage(totalPages);
+    }
   };
 
   return {

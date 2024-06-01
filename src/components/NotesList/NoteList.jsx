@@ -18,7 +18,6 @@ const NoteList = ({ notes, saveNotes }) => {
       <List
         itemLayout="horizontal"
         dataSource={currentNotes}
-        style={{ overflowWrap: "anywhere" }}
         renderItem={(note) => (
           <List.Item
             actions={[
@@ -38,6 +37,13 @@ const NoteList = ({ notes, saveNotes }) => {
             {/* Allow links to specific notes. */}
             <List.Item.Meta
               title={<Link to={`/note/${note.id}`}>{note.title}</Link>}
+            />
+            <List.Item.Meta
+              style={{
+                whiteSpace: "nowrap",
+              }}
+              title={note.body}
+              className="noteBody"
             />
           </List.Item>
         )}

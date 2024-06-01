@@ -9,8 +9,8 @@ import useNotes from "./hooks/useNotes";
 const { Header, Content, Footer } = Layout;
 
 const App = () => {
-  const [notes, saveNotes] = useNotes(); // Custom hook
-  console.log(notes);
+  const [notes, saveNotes] = useNotes();
+  // console.log(notes);
   return (
     // Optimize the application's responsiveness and interactivity.
     <Layout style={{ minHeight: "100vh" }}>

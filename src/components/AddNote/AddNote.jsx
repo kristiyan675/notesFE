@@ -26,7 +26,7 @@ const NoteForm = ({ notes, saveNotes }) => {
   return (
     <div>
       <h2>Add Note</h2>
-      <Form layout="vertical" onFinish={handleSubmit}>
+      <Form layout="vertical" onFinish={handleSubmit} className="addNote">
         <TitleInput
           onChange={(e) => {
             setTitle(e.target.value);
