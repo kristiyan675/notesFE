@@ -45,14 +45,14 @@ From terminal:
 2. Navigate to notes folder
 
    ```sh
-   cd ./notes
+   cd ./notesFE
 
    ```
 
 3. Install dependencies
 
    ```sh
-   npm run install
+   npm install
 
    ```
 
