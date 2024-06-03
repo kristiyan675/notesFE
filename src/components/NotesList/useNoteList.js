@@ -15,8 +15,6 @@ const useNotes = (notes, saveNotes) => {
     const updatedNotes = notes.filter((note) => note.id !== id);
     saveNotes(updatedNotes);
     const totalPages = Math.ceil(updatedNotes.length / notesPerPage);
-    // console.log(totalPages);
-    // console.log(currentNotes, currentPage);
 
     // Edge case if 1 note left on the page and it's deleted
     // Should move to previous page
