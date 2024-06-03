@@ -27,7 +27,7 @@ From terminal:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/kristiyan675/notes.git
+   git clone https://github.com/kristiyan675/notesFE.git
    ```
 
 ### Frontend Setup
