@@ -1,8 +1,66 @@
-# React + Vite
+# Notes App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a frontend application for taking notes, built with a React frontend using Ant Design for styling and uses LocalStorage for handling CRUD operations.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Create, read, update, and delete notes.
+- Responsive design with Ant Design components.
+- Pagination for displaying notes.
+- Integration with LocalStorage for data persistence.
+
+## Technologies Used
+
+### Frontend
+
+- React v18.2.0
+- Ant Design v5.17.4
+- React Router DOM v6.23.1
+- React Paginate v8.2.0
+- Node.js v18.12.1
+
+## Getting Started
+
+Make sure you have NodeJs installed.
+
+From terminal:
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/kristiyan675/notes.git
+   ```
+
+### Frontend Setup
+
+Once the server is running and the database has been created successfully.
+
+From terminal:
+
+1. Clone the repository:
+
+   ```sh
+   git clone https://github.com/kristiyan675/notes.git
+   ```
+
+2. Navigate to notes folder
+
+   ```sh
+   cd ./notes
+
+   ```
+
+3. Install dependencies
+
+   ```sh
+   npm run install
+
+   ```
+
+4. Run the application
+
+   ```sh
+   npm run dev
+
+   ```
+
+5. Open app in the browser
