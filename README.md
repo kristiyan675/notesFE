@@ -64,3 +64,11 @@ From terminal:
    ```
 
 5. Open app in the browser
+
+### Improvements
+All crud operations available with localStorage instead of just save and persist.
+
+
+### Future improvements
+- Add more validation on inputs
+- Improve state management with useContext
