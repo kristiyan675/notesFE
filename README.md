@@ -45,14 +45,14 @@ From terminal:
 2. Navigate to notes folder
 
    ```sh
-   cd ./notes
+   cd ./notesFE
 
    ```
 
 3. Install dependencies
 
    ```sh
-   npm run install
+   npm install
 
    ```
 
@@ -64,3 +64,11 @@ From terminal:
    ```
 
 5. Open app in the browser
+
+### Improvements
+All crud operations available with localStorage instead of just save and persist.
+
+
+### Future improvements
+- Add more validation on inputs
+- Improve state management with useContext
