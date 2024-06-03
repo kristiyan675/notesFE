@@ -16,7 +16,7 @@ const Note = ({ notes, saveNotes }) => {
   } = useNote(notes, saveNotes);
 
   return (
-    <div>
+    <div className="addNote">
       <Button onClick={navHome} style={{ marginBottom: "20px" }}>
         Back
       </Button>
