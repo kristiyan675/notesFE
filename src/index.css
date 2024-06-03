@@ -97,6 +97,10 @@ main li a:hover {
   .ant-list-item-action li {
     padding: 0 8px !important;
   }
+
+  .ant-list-item-meta-title {
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 601px) {
@@ -106,6 +110,5 @@ main li a:hover {
 
   .ant-list-item-meta-title {
     max-width: 350px !important;
-    text-align: left;
   }
 }
