@@ -32,7 +32,7 @@ main li a:hover {
   text-overflow: ellipsis;
   /* Ensures long texts do not break the view in the view */
   max-width: 50% !important;
-  text-align: left;
+  text-align: center;
 }
 
 /* Mobile first design */
@@ -105,8 +105,7 @@ main li a:hover {
   }
 
   .ant-list-item-meta-title {
-    overflow: hidden;
-    text-overflow: ellipsis;
     max-width: 350px !important;
+    text-align: left;
   }
 }
